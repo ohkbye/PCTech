@@ -1,72 +1,112 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: #3a3c46;
-}
-
-li, a, button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    color: #edf0f1;
-    text-decoration: none;
+    font-family: 'Fira sans', sans-serif;
 }
 
 header {
+    background-color: #262626;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 16px;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+
+.navbar {
+    min-height: 70px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 0 24px
 }
 
-.logo {
-    cursor: pointer;
-    height: 60px;
-    margin-right: auto;
-  
-}
-
-.search-bar {
-    margin-left: auto;
-    width: 70%;
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.2);
+.nav-menu {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 60px;
-    padding: 10px 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-
-
-}
-::placeholder {
-    color:white;
-    font-family: arial;
+    gap: 60px;
+    margin: 0;
 }
 
-
-.nav__links li {
-    display: inline-block;
-    position: relative;
-    padding: 0px 20px;
+.nav-link {
+    transition: 0.7s ease;
 }
 
-.nav__links li a {
-    transition: all 0.3s ease 0s;
+.nav-link:hover, .is-active { 
+    background-color: #8c38ff;
+    
 }
 
-.nav__links li a:hover {
-    color: #0088a9;
-}
-
-a.active {
-    padding: 9px 25px;
-    background-color: #49b3ce;
-    border: none;
-    border-radius: 50px;
+.hamburger {
+    display: none;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hamburger:hover span {
+        background-color: blueviolet;
+    }
+
+    .nav-menu {
+        position: fixed;    
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+
+.banner {
+    height: 50px;
+}
+
