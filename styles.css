@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fira sans', sans-serif;
 }
 
 header {
@@ -45,7 +44,12 @@ li {
 
 .nav-link:hover, .is-active { 
     background-color: #8c38ff;
-    
+}
+
+.is-active {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
 }
 
 .hamburger {
@@ -106,7 +110,7 @@ li {
 }
 
 
-.banner {
+.logo {
     height: 50px;
 }
 
