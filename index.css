@@ -75,7 +75,7 @@ main {
 
     background: url(images/graphics_card.png);
     padding: 4rem 0;
-    min-height: 600px;
+    min-height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .arrow {
@@ -188,7 +188,7 @@ section .thumbnail:hover {
 
 .promotion {
     background: url(images/banner.png);
-    min-height: 850px;
+    min-height: 900px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ section .thumbnail:hover {
     font-family: Impact;
     position: relative;
     text-align: center;
-    font-size: 8vh;
+    font-size: 6.5vh;
     margin: auto;
     letter-spacing: 3px;
     text-align: center;
