@@ -46,7 +46,7 @@ p {
 
 #slider img {
     float: left;
-    width: 170px;
+    width: 100%;
     height: 170px;
     object-fit: cover;
     margin: 0;
@@ -82,18 +82,18 @@ main {
     background-size: cover;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
 .slide-container {
     background-color: #f4f4f4;
     border-radius: 25px;
     opacity: 95%;
-    max-width: 1000px;
+    max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .arrow {
@@ -188,7 +188,7 @@ section .thumbnail:hover {
 
 .promotion {
     background: url(images/banner.png);
-    min-height: 760px;
+    min-height: 850px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ section .thumbnail:hover {
     font-family: Impact;
     position: relative;
     text-align: center;
-    font-size: 14vh;
+    font-size: 8vh;
     margin: auto;
     letter-spacing: 3px;
     text-align: center;
@@ -215,6 +215,7 @@ section .thumbnail:hover {
 .promotion h1::before {
     content: attr(data-text);
     position: absolute;
+    text-align: center;
     color: #fff;
     width: 350px;
     overflow: hidden;
