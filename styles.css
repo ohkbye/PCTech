@@ -29,7 +29,7 @@ li {
 }
 
 .navbar {
-    min-height: 70px;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,7 +116,7 @@ li {
 }
 
 .logo {
-    height: 50px;
+    height: 80px;
 }
 
 .footer .container {
@@ -179,7 +179,8 @@ ul {
 
 .footer-col ul li a:hover {
     color: #ffffff;
-    padding-left: 8px;
+    padding-left: 15px;
+    transition: all 0.7s ease;
 }
 
 .footer-col .social-links a {
@@ -192,7 +193,7 @@ ul {
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
-    transition: all 0.3s ease;
+    transition: all .5s ease;
 }
 
 .footer-col .social-links a:hover {
