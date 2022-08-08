@@ -46,7 +46,7 @@ p {
 
 #slider img {
     float: left;
-    width: 100%;
+    width: auto;
     height: 170px;
     object-fit: cover;
     margin: 0;
@@ -68,7 +68,7 @@ h1 {
 
 h2 {
     letter-spacing: -1px;
-    font-family: Arial
+    font-family: Arial;
 }
 
 main {
@@ -202,7 +202,7 @@ section .thumbnail:hover {
     font-family: Impact;
     position: relative;
     text-align: center;
-    font-size: 6.5vh;
+    font-size: 10vh;
     margin: auto;
     letter-spacing: 3px;
     text-align: center;
@@ -211,6 +211,17 @@ section .thumbnail:hover {
     text-transform: uppercase;
     opacity: 95%;
 }
+
+@media(max-width: 900px) {
+    .promotion h1 {
+        font-size: 9vw;
+    }
+    .products-on-sale {
+        font-size: 7vw;
+    }
+}
+
+
 
 .promotion h1::before {
     content: attr(data-text);
@@ -221,7 +232,7 @@ section .thumbnail:hover {
     overflow: hidden;
     white-space: nowrap;
     border-right: 4px solid #fff;
-    animation: animate 8s linear infinite;
+    animation: animate 3s linear infinite;
     filter: drop-shadow(0 0 20px #fff);
     text-decoration: underline;
     text-shadow:

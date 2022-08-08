@@ -46,318 +46,367 @@
                 </form>
             </div>
             <div class="filter-box">
-                <a href="#" class="btn active" data-filter="all">All</a>
-                <a href="#" class="btn on-sale" data-filter="on-sale">On Sale</a>
-                <a href="#" class="btn" data-filter="cpu">CPU / Processors</a>
-                <a href="#" class="btn" data-filter="storage">Storage</a>
-                <a href="#" class="btn" data-filter="motherboard">Motherboards</a>
-                <a href="#" class="btn" data-filter="psu">Power Supplies</a>
-                <a href="#" class="btn" data-filter="ram">RAM</a>
-                <a href="#" class="btn" data-filter="gpu">Video Cards</a>
-                <a href="#" class="btn" data-filter="os">Operating Systems</a>
-                <a href="#" class="btn" data-filter="case">Cases</a>
-                <a href="#" class="btn" data-filter="cooling">Cooling</a>
+                <a href="#" class="navbtn active" data-filter="all">All</a>
+                <a href="#" class="navbtn on-sale" data-filter="on-sale">On Sale</a>
+                <a href="#" class="navbtn" data-filter="cpu">CPU / Processors</a>
+                <a href="#" class="navbtn" data-filter="storage">Storage</a>
+                <a href="#" class="navbtn" data-filter="motherboard">Motherboards</a>
+                <a href="#" class="navbtn" data-filter="psu">Power Supplies</a>
+                <a href="#" class="navbtn" data-filter="ram">RAM</a>
+                <a href="#" class="navbtn" data-filter="gpu">Video Cards</a>
+                <a href="#" class="navbtn" data-filter="os">Operating Systems</a>
+                <a href="#" class="navbtn" data-filter="case">Cases</a>
+                <a href="#" class="navbtn" data-filter="cooling">Cooling</a>
 
             </div>
         </div>
     </div>
-    <main>
+    <main>  
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total: </strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
         <div class="slide-container">
             <section class="container" id="store-products">
-                <div class="store-product psu">
-                    <img src="images/psu/dq750.png" alt="dq750">
-                    <div class="product-details">
-                        <h2>DEEPCOOL 750W</h2>
-                        <p>$169.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product cpu">
-                    <img src="images/cpu/5600.png" alt="5600">
-                    <div class="product-details">
-                        <h2>AMD Ryzen 5 5600</h2>
-                        <p>$333.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product gpu on-sale">
-                    <img src="images/gpu/6600.png" alt="6600">
-                    <div class="product-details">
-                        <h2>Radeon RX 6600 XT</h2>
-                        <p> <span>$499.99</span> $459.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product cooling">
-                    <img src="images/cooling/coolermaster.png" alt="coolermaster">
-                    <div class="product-details">
-                        <h2>Cooler Master MasterLiquid</h2>
-                        <p> <span>$149.99</span> $110.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product motherboard on-sale">
-                    <img src="images/motherboard/b660.png" alt="b660">
-                    <div class="product-details">
-                        <h2>MSI PRO B660M-A</h2>
-                        <p> <span>259.99</span> $166.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product os">
-                    <img src="images/os/win11_home.png" alt="win11_home">
-                    <div class="product-details">
-                        <h2>Microsoft Windows 11 Home</h2>
-                        <p>$179.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product psu on-sale">
-                    <img src="images/psu/evga_600.png" alt="evga_600">
-                    <div class="product-details">
-                        <h2>EVGA 600 BR 600W</h2>
-                        <p> <span>$109.99</span> $87.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product case">
-                    <img src="images/case/lancool.png" alt="lancool">
-                    <div class="product-details">
-                        <h2>Lian Li Lancool 215</h2>
-                        <p>$138.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product cpu on-sale">
-                    <img src="images/cpu/5600x.png" alt="5600x">
-                    <div class="product-details">
-                        <h2>AMD Ryzen 5 5600X</h2>
-                        <p> <span>$339.99</span> $289.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product ram on-sale">
-                    <img src="images/ram/ripjaws_v.png" alt="ripjaws_v">
-                    <div class="product-details">
-                        <h2>G.SKILL Ripjaws V 16GB</h2>
-                        <p> <span>$115.99</span> $99.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product ram">
-                    <img src="images/ram/ripjawx_x.png" alt="ripjawsx_x">
-                    <div class="product-details">
-                        <h2>G.SKILL Ripjaws X 8GB</h2>
-                        <p>$98.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product storage on-sale">
-                    <img src="images/storage/m.2.png" alt="m.2">
-                    <div class="product-details">
-                        <h2>Samsung 980 1TB</h2>
-                        <p> <span>$99.99</span> $89.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product os">
-                    <img src="images/os/win11_pro.png" alt="win11_home">
-                    <div class="product-details">
-                        <h2>Microsoft Windows 11 Pro</h2>
-                        <p>$229.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product cooling on-sale">
-                    <img src="images/cooling/hyper212.png" alt="hyper212">
-                    <div class="product-details">
-                        <h2>Cooler Master Hyper 212</h2>
-                        <p> <span>$84.99</span> $62.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product os on-sale">
-                    <img src="images/os/win10_pro.png" alt="win10_pro">
-                    <div class="product-details">
-                        <h2>Microsoft Windows 10 Pro</h2>
-                        <p> <span>$229.99</span> $200.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product gpu">
-                    <img src="images/gpu/3070ti.png" alt="3070ti">
-                    <div class="product-details">
-                        <h2>EVGA GeForce RTX 3070 Ti</h2>
-                        <p>$1199.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product gpu on-sale">
-                    <img src="images/gpu/3060.png" alt="3060">
-                    <div class="product-details">
-                        <h2>Geforce RTX 3060</h2>
-                        <p> <span>$649.99</span> $600.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="store-product gpu on-sale">
-                    <img src="images/gpu/3080.png" alt="3080">
-                    <div class="product-details">
-                        <h2>GeForce RTX 3080</h2>
-                        <p> <span>$1499.99</span> $1249.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product psu">
+                    <img class="shop-item-image" src="images/psu/dq750.png" alt="dq750">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">DEEPCOOL 750W</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$169.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="store-product cpu">
-                    <img src="images/cpu/10400f.png" alt="10400f">
-                    <div class="product-details">
-                        <h2>Intel Core i5 10400f</h2>
-                        <p>$215.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product cpu">
+                    <img class="shop-item-image" src="images/cpu/5600.png" alt="5600">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">AMD Ryzen 5 5600</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$333.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product case">
-                    <img src="images/case/h511.png" alt="h511">
-                    <div class="product-details">
-                        <h2>NZXT H511</h2>
-                        <p>$99.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product gpu on-sale">
+                    <img class="shop-item-image" src="images/gpu/6600.png" alt="6600">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Radeon RX 6600 XT</h2>
+                        <div class="discount">$499.99</div>
+                        <p class="shop-item-price">$459.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product cpu on-sale">
-                    <img src="images/cpu/12400f.png" alt="12400f">
-                    <div class="product-details">
-                        <h2>Intel Core i5 12400F</h2>
-                        <p> <span>$295.99</span> $269.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product cooling on-sale">
+                    <img class="shop-item-image" src="images/cooling/coolermaster.png" alt="coolermaster">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Cooler Master MasterLiquid</h2>
+                        <div class="discount">$149.99</div>
+                        <p class="shop-item-price">$110.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product storage">
-                    <img src="images/storage/hdd.png" alt="hdd">
-                    <div class="product-details">
-                        <h2>Seagate BarraCuda 2TB</h2>
-                        <p>$94.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product motherboard on-sale">
+                    <img class="shop-item-image" src="images/motherboard/b660.png" alt="b660">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">MSI PRO B660M-A</h2>
+                        <div class="discount">$259.99</div>
+                        <p class="shop-item-price">$166.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product case">
-                    <img src="images/case/p300a.png" alt="p300a">
-                    <div class="product-details">
-                        <h2>Phanteks Eclipse P300A</h2>
-                        <p> <span>$109.99</span> $76.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product os">
+                    <img class="shop-item-image" src="images/os/win11_home.png" alt="win11_home">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Microsoft Windows 11 Home</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$179.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product storage">
-                    <img src="images/storage/bx500.png" alt="bx500">
-                    <div class="product-details">
-                        <h2>Crucial BX500 1TB</h2>
-                        <p>$159.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product psu on-sale">
+                    <img class="shop-item-image" src="images/psu/evga_600.png" alt="evga_600">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">EVGA 600 BR 600W</h2>
+                        <div class="discount">$109.99</div>
+                        <p class="shop-item-price">$87.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product motherboard on-sale">
-                    <img src="images/motherboard/z690.png" alt="z690">
-                    <div class="product-details">
-                        <h2>Gigabyte Z690 GAMING</h2>
-                        <p> <span>$424.99</span> $369.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product case">
+                    <img class="shop-item-image" src="images/case/lancool.png" alt="lancool">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Lian Li Lancool 215</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$138.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product ram">
-                    <img src="images/ram/trident_z.png" alt="trident_z">
-                    <div class="product-details">
-                        <h2>G.SKILL Trident Z 32GB</h2>
-                        <p> <span>$109.99</span> $75.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product cpu on-sale">
+                    <img class="shop-item-image" src="images/cpu/5600x.png" alt="5600x">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">AMD Ryzen 5 5600X</h2>
+                        <div class="discount">$339.99</div>
+                        <p class="shop-item-price">$289.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product case on-sale">
-                    <img src="images/case/deepcool.png" alt="deepcool">
-                    <div class="product-details">
-                        <h2>DEEPCOOL MATREXX</h2>
-                        <p> <span>$109.99</span> $75.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product ram on-sale">
+                    <img class="shop-item-image" src="images/ram/ripjaws_v.png" alt="ripjaws_v">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">G.SKILL Ripjaws V 16GB</h2>
+                        <div class="discount">$115.99</div>
+                        <p class="shop-item-price">$99.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product psu">
-                    <img src="images/psu/dq850.png" alt="dq850">
-                    <div class="product-details">
-                        <h2>DEEPCOOL 850W</h2>
-                        <p>$194.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product ram">
+                    <img class="shop-item-image" src="images/ram/ripjawx_x.png" alt="ripjawsx_x">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">G.SKILL Ripjaws X 8GB</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$98.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product motherboard on-sale">
-                    <img src="images/motherboard/b550.png" alt="b550">
-                    <div class="product-details">
-                        <h2>Gigabyte B550 GAMING</h2>
-                        <p> <span>$240.99</span> $222.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product storage on-sale">
+                    <img class="shop-item-image" src="images/storage/m.2.png" alt="m.2">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Samsung 980 1TB</h2>
+                        <div class="discount">$99.99</div>
+                        <p class="shop-item-price">$89.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product cooling">
-                    <img src="images/cooling/sl120.png" alt="sl120">
-                    <div class="product-details">
-                        <h2>Lian Li UNI FAN SL120</h2>
-                        <p>$136.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product os">
+                    <img class="shop-item-image" src="images/os/win11_pro.png" alt="win11_home">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Microsoft Windows 11 Pro</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$229.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product psu on-sale">
-                    <img src="images/psu/coolermaster_mwe.png" alt="mwe">
-                    <div class="product-details">
-                        <h2>Cooler Master MWE 850W</h2>
-                        <p> <span>$199.99</span> $169.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product cooling on-sale">
+                    <img class="shop-item-image" src="images/cooling/hyper212.png" alt="hyper212">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Cooler Master Hyper 212</h2>
+                        <div class="discount">$84.99</div>
+                        <p class="shop-item-price">$62.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-
-                <div class="store-product ram on-sale">
-                    <img src="images/ram/corsair_lpx.png" alt="lpx">
-                    <div class="product-details">
-                        <h2>Corsair Vengeance 16GB</h2>
-                        <p> <span>$129.99</span> $119.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product os on-sale">
+                    <img class="shop-item-image" src="images/os/win10_pro.png" alt="win10_pro">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Microsoft Windows 10 Pro</h2>
+                        <div class="discount">$229.99</div>
+                        <p class="shop-item-price">$200.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product os">
-                    <img src="images/os/win10_home.png" alt="win10_home">
-                    <div class="product-details">
-                        <h2>Microsoft Windows 10 Home</h2>
-                        <p>$179.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product gpu">
+                    <img class="shop-item-image" src="images/gpu/3070ti.png" alt="3070ti">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">EVGA GeForce RTX 3070 Ti</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$1199.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product cooling on-sale">
-                    <img src="images/cooling/mf120.png" alt="mf120">
-                    <div class="product-details">
-                        <h2>Cooler Master MasterFan MF120</h2>
-                        <p> <span>$34.99</span> $28.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product gpu on-sale">
+                    <img class="shop-item-image" src="images/gpu/3060.png" alt="3060">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Geforce RTX 3060</h2>
+                        <div class="discount">$649.99</div>
+                        <p class="shop-item-price">$600.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product motherboard on-sale">
-                    <img src="images/motherboard/b550m.png" alt="b550m">
-                    <div class="product-details">
-                        <h2>Gigabyte B550M</h2>
-                        <p> <span>$199.99</span> $179.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product cpu">
+                    <img class="shop-item-image" src="images/cpu/10400f.png" alt="10400f">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Intel Core i5 10400f</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$215.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
-                <div class="store-product storage">
-                    <img src="images/storage/samsung_870.png" alt="samsung_870">
-                    <div class="product-details">
-                        <h2>Samsung 870 EVO 500GB</h2>
-                        <p>$94.99</p>
-                        <a href="#">Add to Cart</a>
+                <div class="shop-item store-product gpu on-sale">
+                    <img class="shop-item-image" src="images/gpu/3080.png" alt="3080">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">GeForce RTX 3080</h2>
+                        <div class="discount">$1499.99</div>
+                        <p class="shop-item-price">$1249.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product case">
+                    <img class="shop-item-image" src="images/case/h511.png" alt="h511">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">ZXT H511</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$99.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product cpu on-sale">
+                    <img class="shop-item-image" src="images/cpu/12400f.png" alt="12400f">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Intel Core i5 12400F</h2>
+                        <div class="discount">$295.99</div>
+                        <p class="shop-item-price">$269.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product storage">
+                    <img class="shop-item-image" src="images/storage/hdd.png" alt="hdd">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Seagate BarraCuda 2TB</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$94.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product case">
+                    <img class="shop-item-image" src="images/case/p300a.png" alt="p300a">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Phanteks Eclipse P300A</h2>
+                        <div class="discount">$109.99</div>
+                        <p class="shop-item-price">$76.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product storage">
+                    <img class="shop-item-image" src="images/storage/bx500.png" alt="bx500">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Crucial BX500 1TB</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$159.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product motherboard on-sale">
+                    <img class="shop-item-image" src="images/motherboard/z690.png" alt="z690">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Gigabyte Z690 GAMING</h2>
+                        <div class="discount">$424.99</div>
+                        <p class="shop-item-price">$369.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product ram">
+                    <img class="shop-item-image" src="images/ram/trident_z.png" alt="trident_z">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">G.SKILL Trident Z 32GB</h2>
+                        <div class="discount">$109.99</div>
+                        <p class="shop-item-price">$75.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product case on-sale">
+                    <img class="shop-item-image" src="images/case/deepcool.png" alt="deepcool">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">DEEPCOOL MATREXX</h2>
+                        <div class="discount">$109.99</div>
+                        <p class="shop-item-price">$75.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product psu">
+                    <img class="shop-item-image" src="images/psu/dq850.png" alt="dq850">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">DEEPCOOL 850W</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$194.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product motherboard on-sale">
+                    <img class="shop-item-image" src="images/motherboard/b550.png" alt="b550">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Gigabyte B550 GAMING</h2>
+                        <div class="discount">$240.99</div>
+                        <p class="shop-item-price">$222.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product cooling">
+                    <img class="shop-item-image" src="images/cooling/sl120.png" alt="sl120">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Lian Li UNI FAN SL120</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$136.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product psu on-sale">
+                    <img class="shop-item-image" src="images/psu/coolermaster_mwe.png" alt="mwe">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Cooler Master MWE 850W</h2>
+                        <div class="discount">$199.99</div>
+                        <p class="shop-item-price">$169.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product ram on-sale">
+                    <img class="shop-item-image" src="images/ram/corsair_lpx.png" alt="lpx">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Corsair Vengeance 16GB</h2>
+                        <div class="discount">$129.99</div>
+                        <p class="shop-item-price">$119.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product os">
+                    <img class="shop-item-image" src="images/os/win10_home.png" alt="win10_home">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Microsoft Windows 10 Home</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$179.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product cooling on-sale">
+                    <img class="shop-item-image" src="images/cooling/mf120.png" alt="mf120">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Cooler Master MasterFan MF120</h2>
+                        <div class="discount">$34.99</div>
+                        <p class="shop-item-price">$28.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product motherboard on-sale">
+                    <img class="shop-item-image" src="images/motherboard/b550m.png" alt="b550m">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Gigabyte B550M</h2>
+                        <div class="discount">$199.99</div>
+                        <p class="shop-item-price">$179.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="shop-item store-product storage">
+                    <img class="shop-item-image" src="images/storage/samsung_870.png" alt="samsung_870">
+                    <div class="product-details shop-item-details">
+                        <h2 class="shop-item-title">Samsung 870 EVO 500GB</h2>
+                        <div class="discount">_____</div>
+                        <p class="shop-item-price">$94.99</p>
+                        <a href="#" class="btn btn-primary shop-item-button" type="button">Add to Cart</a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="row">
