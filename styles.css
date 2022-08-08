@@ -111,6 +111,7 @@ li {
     }
 
     .nav-menu.active {
+        top: 100px;
         left: 0;
     }
 }
