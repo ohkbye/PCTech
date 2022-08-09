@@ -1,15 +1,20 @@
 const btns = document.querySelectorAll('.navbtn');
 const storeProducts = document.querySelectorAll('.store-product');
-// const search = document.getElementById(search);
 
 for (i = 0; i < btns.length; i++) {
 
     btns[i].addEventListener('click', (e) => {
         e.preventDefault()
-
+        var cart_toggle = document.getElementById('cart');
+        var product_toggle = document.getElementById('products');
+        var cartButton = document.getElementById('cart-button');
+        var continueShopping = document.getElementById('continue-shopping');
         const filter = e.target.dataset.filter;
         console.log(filter);
-
+        cart_toggle.style.display = 'none';
+        product_toggle.style.display = 'block';
+        cartButton.style.display = 'block';
+        continueShopping.style.display = 'none';
         storeProducts.forEach((product) => {
             if (filter === 'all') {
                 product.style.display = 'block'
@@ -85,8 +90,10 @@ function purchaseClicked() {
 }
 
 function removeCartItem(event) {
+    var cartQuantity = document.getElementById("cart-count")
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
+    cartQuantity.textContent = parseInt(cartQuantity.textContent) - 1;
     updateCartTotal()
 }
 
@@ -104,7 +111,9 @@ function addToCartClicked(event) {
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    var cartQuantity = document.getElementById("cart-count")
     addItemToCart(title, price, imageSrc)
+    cartQuantity.textContent = parseInt(cartQuantity.textContent) + 1;
     updateCartTotal()
 }
 
@@ -115,7 +124,8 @@ function addItemToCart(title, price, imageSrc) {
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
+            alert('This item is already added to the cart\nTo add more of this item, change the quantity in the cart')
+            cartQuantity.textContent = parseInt(cartQuantity.textContent) - 1;
             return
         }
     }
@@ -127,7 +137,7 @@ function addItemToCart(title, price, imageSrc) {
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
+            <button class="btn btn-danger" type="button">REMOVE ITEM</button>
         </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
@@ -149,4 +159,25 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+
+function view_cart() {
+    var cart_toggle = document.getElementById('cart');
+    var product_toggle = document.getElementById('products');
+    var cartButton = document.getElementById('cart-button');
+    var continueShopping = document.getElementById('continue-shopping');
+    if (product_toggle.style.display != 'none') {
+        cart_toggle.style.display = 'block';
+        product_toggle.style.display = 'none';
+        cartButton.style.display = 'none';
+        continueShopping.style.display = 'block';
+
+    }
+    else {
+        cart_toggle.style.display = 'none';
+        product_toggle.style.display = 'block';
+        cartButton.style.display = 'block';
+        continueShopping.style.display = 'none';
+    }
 }

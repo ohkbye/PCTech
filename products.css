@@ -280,4 +280,79 @@ form input {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+    border-radius: 50px;
 }
+
+.navbtn:hover {
+    background-color: #ff1515;
+    color: black;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+
+.cart_icon {
+    font-family: "Metal Mania";
+    margin: 30px;
+    font-size: 40px;
+    height: auto;
+    width: 250px;
+    border-width: 1px;
+    border-radius: 50px;
+    left: 65%;
+    position: relative;
+    background-color: #56595f96;
+}
+
+.cart_icon:hover {
+    background: #85a7e696;;
+}
+
+.cart_icon img {
+    height: auto;
+    width: 45px;
+}
+
+#cart-count {
+    text-align: center;
+    font-size: 30px;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
+}
+
+#cart {
+    display: none;
+}
+
+.continue_shopping {
+    display: none;
+    font-size: 30px;
+}
+
+@media(max-width: 850px) {
+    .cart_icon {
+        left: 50%;
+    }   
+}
+
+@media(max-width: 580px) {
+    .cart_icon {
+        left: 40%;
+    }   
+}
+
+@media(max-width: 470px) {
+    .cart_icon {
+        left: 25%;
+    }   
+}
+
+@media(max-width: 1130px) {
+    .product-details h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
