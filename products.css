@@ -81,7 +81,7 @@ form input {
     text-decoration: none;
     color: #fff;
     margin-right: 12px;
-    background-color: var(--color-sec);
+    background-color: #8c38ff;
     padding: 4px;
     border-radius: 10px;
 }
@@ -169,7 +169,7 @@ form input {
 .product-details a {
     font-size: 1rem;
     text-decoration: none;
-    background-color: var(--color-sec);
+    background-color: #8c38ff;
     color: #fff;
     padding: .5rem 1rem;
     border-radius: 3px;
