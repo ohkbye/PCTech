@@ -1,21 +1,29 @@
+/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Selects all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*  Navbar */
 header {
     background-color: #262626;
 }
 
 li {
     list-style: none;
+}
+
+.logo {
+    height: 80px;
 }
 
 .nav-menu a {
@@ -48,7 +56,8 @@ li {
     transition: 0.7s ease;
 }
 
-.nav-link:hover, .is-active { 
+.nav-link:hover,
+.is-active {
     background-color: #8c38ff;
 }
 
@@ -58,6 +67,7 @@ li {
     border-style: solid;
 }
 
+/* Hamburger menu */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -73,6 +83,7 @@ li {
     background-color: white;
 }
 
+/* Media rules to make website appropriate for all screen sizes */
 @media(max-width: 768px) {
     .hamburger {
         display: block;
@@ -95,7 +106,7 @@ li {
     }
 
     .nav-menu {
-        position: fixed;    
+        position: fixed;
         left: -100%;
         top: 70px;
         gap: 0;
@@ -116,10 +127,7 @@ li {
     }
 }
 
-.logo {
-    height: 80px;
-}
-
+/* Footer */
 .footer .container {
     max-width: 1170px;
     margin: auto;
@@ -167,6 +175,7 @@ ul {
 .footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
+
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;

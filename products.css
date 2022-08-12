@@ -1,3 +1,4 @@
+/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
@@ -12,6 +13,7 @@
     --color-dark-grey: #222831;
 }
 
+/* Selects all elements */
 * {
     margin: 0;
     padding: 0;
@@ -22,28 +24,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* UTILITY */
-.p-small {
-    padding-bottom: 5px;
-}
-
-.p-medium {
-    padding-bottom: 10px;
-}
-
-.p-y {
-    padding: 10px 0;
-}
-
-.m-y {
-    margin: 10px 0;
-}
-
-p {
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
+/* Store products */
 img {
     width: 100%;
 }
@@ -65,50 +46,6 @@ img {
     color: var(--color-primary);
 }
 
-form input {
-    width: 20rem;
-    padding: .7rem;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    font-size: 1rem;
-    border-bottom: 2px solid var(--color-sec);
-    margin-bottom: 1rem;
-}
-
-.navbtn {
-    font-size: 1rem;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 12px;
-    background-color: #8c38ff;
-    padding: 4px;
-    border-radius: 10px;
-}
-
-.filter-box .active {
-    background-color: var(--color-primary);
-}
-
-.filter-box .on-sale {
-    background-color: #dba800;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073
-    }
-
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6
-    }
-}
-
 #store-products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -122,24 +59,6 @@ form input {
     max-width: 260px;
     border-radius: 15px;
     border-width: 1px;
-}
-
-@media(max-width: 1060px) {
-    .store-product {
-        max-width: 280px;
-    }
-}
-
-@media(max-width: 830px) {
-    .store-product {
-        max-width: 330px;
-    }
-}
-
-@media(max-width: 600px) {
-    .store-product {
-        max-width: 450px;
-    }
 }
 
 .product-details {
@@ -180,6 +99,72 @@ form input {
 }
 
 
+/* Product filter */
+form input {
+    width: 20rem;
+    padding: .7rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--color-sec);
+    margin-bottom: 1rem;
+}
+
+.navbtn {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 12px;
+    background-color: #8c38ff;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.filter-box .active {
+    background-color: var(--color-primary);
+}
+
+.filter-box .on-sale {
+    background-color: #dba800;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Glow effect */
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6
+    }
+}
+
+/* Responsive */
+@media(max-width: 1060px) {
+    .store-product {
+        max-width: 280px;
+    }
+}
+
+@media(max-width: 830px) {
+    .store-product {
+        max-width: 330px;
+    }
+}
+
+@media(max-width: 600px) {
+    .store-product {
+        max-width: 450px;
+    }
+}
+
+/* Cart */
 .content-section {
     padding-top: 30px;
 }
@@ -292,7 +277,6 @@ form input {
     border-color: white;
 }
 
-
 .cart_icon {
     font-family: "Metal Mania";
     margin: 30px;
@@ -307,7 +291,8 @@ form input {
 }
 
 .cart_icon:hover {
-    background: #85a7e696;;
+    background: #85a7e696;
+    ;
 }
 
 .cart_icon img {
@@ -331,22 +316,23 @@ form input {
     font-size: 30px;
 }
 
+/* Responsive */
 @media(max-width: 850px) {
     .cart_icon {
         left: 50%;
-    }   
+    }
 }
 
 @media(max-width: 580px) {
     .cart_icon {
         left: 40%;
-    }   
+    }
 }
 
 @media(max-width: 470px) {
     .cart_icon {
         left: 25%;
-    }   
+    }
 }
 
 @media(max-width: 1130px) {
@@ -355,4 +341,3 @@ form input {
         font-weight: 500;
     }
 }
-

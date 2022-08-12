@@ -1,5 +1,7 @@
+/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
+/* Selects all elements */
 * {
     margin: 0px;
     padding: 0px;
@@ -7,22 +9,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* About us */
 .section {
     width: 100%;
     min-height: 550px;
     background-color: #ddd;
-}
-
-@media (max-width: 1068px) {
-    .section {
-        min-height: 650px;
-    }
-}
-
-@media (max-width: 768px) {
-    .section {
-        min-height: 150vh;
-    }
 }
 
 .container {
@@ -99,6 +90,19 @@
     color: #3d3d3d;
 }
 
+/* Responsive */
+@media (max-width: 1068px) {
+    .section {
+        min-height: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        min-height: 150vh;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container {
         width: 80%;
@@ -143,6 +147,7 @@
     }
 }
 
+/* Reviews */
 .reviews {
     padding: 40px 0;
     background: #f1f1f1;
@@ -200,6 +205,7 @@
     margin-bottom: 20px;
 }
 
+/* Responsive */
 @media screen and (max-width: 960px) {
     .col {
         flex: 100%;
@@ -214,6 +220,7 @@
     }
 }
 
+/* Rating function */
 .rating-container {
     display: grid;
     height: 100%;

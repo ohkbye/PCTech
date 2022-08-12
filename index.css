@@ -1,3 +1,4 @@
+/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
@@ -12,6 +13,7 @@
     --color-dark-grey: #222831;
 }
 
+/* Selects all elements */
 * {
     margin: 0;
     padding: 0;
@@ -44,6 +46,7 @@ p {
     line-height: 1.5;
 }
 
+/* Carousel */
 #slider img {
     float: left;
     width: auto;
@@ -142,13 +145,13 @@ section .thumbnail {
     transform: scale(.95);
     transition: all .3s;
     border-radius: 15px;
-
 }
 
 section .thumbnail:hover {
     transform: scale(1);
 }
 
+/* Product details */
 .product-details {
     text-align: center;
     padding-bottom: 1rem;
@@ -186,6 +189,7 @@ section .thumbnail:hover {
     background-color: var(--color-primary);
 }
 
+/* Promotional image and animated text */
 .promotion {
     background: url(images/banner.png);
     min-height: 90vh;
@@ -212,17 +216,6 @@ section .thumbnail:hover {
     opacity: 95%;
 }
 
-@media(max-width: 900px) {
-    .promotion h1 {
-        font-size: 9vw;
-    }
-    .products-on-sale {
-        font-size: 7vw;
-    }
-}
-
-
-
 .promotion h1::before {
     content: attr(data-text);
     position: absolute;
@@ -236,20 +229,34 @@ section .thumbnail:hover {
     filter: drop-shadow(0 0 20px #fff);
     text-decoration: underline;
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
-    
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
+/* Animation for promotional text */
 @keyframes animate {
-    0%, 10%, 100%
-    {
+
+    0%,
+    10%,
+    100% {
         width: 0;
     }
-    70%, 90%
-    {
+
+    70%,
+    90% {
         width: 100%;
+    }
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .promotion h1 {
+        font-size: 9vw;
+    }
+
+    .products-on-sale {
+        font-size: 7vw;
     }
 }

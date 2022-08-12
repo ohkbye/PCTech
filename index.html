@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Setting viewpoint, title, icon, and linking bootstrap and css files -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +16,12 @@
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <header>
         <nav class="navbar">
+            <!-- Logo -->
             <a href="index.html" class="nav-branding"><img class="logo" src="images/logo.png" alt="logo"></a>
+            <!-- Navigation links -->
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="is-active nav-link">Home</a>
@@ -28,6 +33,7 @@
                     <a href="about.html" class="nav-link">About</a>
                 </li>
             </ul>
+            <!-- Hamburger menu -->
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -35,19 +41,27 @@
             </div>
         </nav>
     </header>
+    <!-- Promotional image and animated text -->
     <div class="promotion">
         <h1 data-text="⬇ huge winter sale ⬇">⬇ huge winter sale ⬇</h1>
     </div>
+    <!-- Text displaying products on sale using h1 -->
     <h1 class="products-on-sale">⬇⬇⬇ Products on sale! ⬇⬇⬇</h1>
     <main>
+        <!-- Carousel -->
         <div class="slide-container">
             <img id="slide-left" class="arrow" src="images/arrow-left.png" alt="left-arrow">
             <section class="container" id="slider">
+                <!-- Product -->
                 <div class="thumbnail">
+                    <!-- Product image -->
                     <img src="images/cpu/5600x.png" alt="5600x">
                     <div class="product-details">
+                        <!-- Product name -->
                         <h2>AMD Ryzen 5 5600X</h2>
+                        <!-- Product price on sale and original price -->
                         <p> <span>$339.99</span> $289.99</p>
+                        <!-- Button that links to products.html -->
                         <a href="products.html">View more</a>
                     </div>
                 </div>
@@ -199,11 +213,14 @@
             <img id="slide-right" class="arrow" src="images/arrow-right.png" alt="right-arrow">
         </div>
     </main>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
+                <!-- Footer internal and external links -->
                 <div class="footer-col">
                     <h4>company</h4>
+                    <!-- Internal links -->
                     <ul>
                         <li><a href="about.html">about us</a></li>
                         <li><a href="about.html">our services</a></li>
@@ -213,6 +230,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>inspired by</h4>
+                    <!-- External links -->
                     <ul>
                         <li><a href="https://www.pbtech.co.nz/" target="_blank">PB tech</a></li>
                         <li><a href="https://www.mightyape.co.nz/" target="_blank">mighty ape</a></li>
@@ -220,6 +238,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>online shop</h4>
+                    <!-- Internal links -->
                     <ul>
                         <li><a href="products.html">computers & tablets</a></li>
                         <li><a href="products.html">PC peripherals & accessories</a></li>
@@ -232,6 +251,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>follow us</h4>
+                    <!-- Social media links -->
                     <div class="social-links">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -244,6 +264,7 @@
             </div>
         </div>
     </footer>
+    <!-- Linking to javascript files -->
     <script src="script.js"></script>
     <script src="index.js"></script>
 </body>

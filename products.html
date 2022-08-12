@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Setting viewpoint, title, icon, and linking bootstrap and css files -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +16,12 @@
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <header>
         <nav class="navbar">
+            <!-- Logo -->
             <a href="index.html" class="nav-branding"><img class="logo" src="images/logo.png" alt="logo"></a>
+            <!-- Navigation links -->
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
@@ -28,6 +33,7 @@
                     <a href="about.html" class="nav-link">About</a>
                 </li>
             </ul>
+            <!-- Hamburger menu -->
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -35,6 +41,7 @@
             </div>
         </nav>
     </header>
+    <!-- Product filter-->
     <div class="products">
         <div class="container">
             <h1>Product Filter</h1>
@@ -42,9 +49,9 @@
             <div class="search-box">
                 <form onsubmit="return false">
                     <input type="text" id="search" placeholder="Search Product">
-                    <!-- <button id="btn-search">Search</button> -->
                 </form>
             </div>
+            <!-- Filter buttons -->
             <div class="filter-box">
                 <a href="#" class="navbtn active" data-filter="all">All</a>
                 <a href="#" class="navbtn on-sale" data-filter="on-sale">On Sale</a>
@@ -62,9 +69,11 @@
         </div>
     </div>
     <main>
+        <!-- Cart function -->
         <button onclick="view_cart()" class="continue_shopping cart_icon" id="continue-shopping"> Continue shopping
         </button>
-        <button onclick="view_cart()" class="cart_icon" id="cart-button"><img src="images/cart.png" alt="cart_icon"> Cart <span id="cart-count" class="text-warning bg-light">0</span></button>
+        <button onclick="view_cart()" class="cart_icon" id="cart-button"><img src="images/cart.png" alt="cart_icon">
+            Cart <span id="cart-count" class="text-warning bg-light">0</span></button>
         <section class="container content-section" id="cart">
             <h2 class="section-header">CART</h2>
             <div class="cart-row">
@@ -80,14 +89,21 @@
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PROCEED TO CHECKOUT</button>
         </section>
+        <!-- Store products section-->
         <div class="slide-container" id="products">
             <section class="container" id="store-products">
+                <!-- Product -->
                 <div class="shop-item store-product psu">
+                    <!-- Product image -->
                     <img class="shop-item-image" src="images/psu/dq750.png" alt="dq750">
                     <div class="product-details shop-item-details">
+                        <!-- Product name -->
                         <h2 class="shop-item-title">DEEPCOOL 750W</h2>
+                        <!-- Discount -->
                         <div class="discount">_____</div>
+                        <!-- Price -->
                         <p class="shop-item-price">$169.99</p>
+                        <!-- Button that adds product item to cart -->
                         <a href="#" class="btn btn-primary shop-item-button">Add to Cart</a>
                     </div>
                 </div>
@@ -409,11 +425,14 @@
             </section>
         </div>
     </main>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
+                <!-- Footer internal and external links -->
                 <div class="footer-col">
                     <h4>company</h4>
+                    <!-- Internal links -->
                     <ul>
                         <li><a href="about.html">about us</a></li>
                         <li><a href="about.html">our services</a></li>
@@ -423,6 +442,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>inspired by</h4>
+                    <!-- External links -->
                     <ul>
                         <li><a href="https://www.pbtech.co.nz/" target="_blank">PB tech</a></li>
                         <li><a href="https://www.mightyape.co.nz/" target="_blank">mighty ape</a></li>
@@ -430,6 +450,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>online shop</h4>
+                    <!-- Internal links -->
                     <ul>
                         <li><a href="products.html">computers & tablets</a></li>
                         <li><a href="products.html">PC peripherals & accessories</a></li>
@@ -442,6 +463,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>follow us</h4>
+                    <!-- Social media links -->
                     <div class="social-links">
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -454,6 +476,7 @@
             </div>
         </div>
     </footer>
+    <!-- Linking to javascript files -->
     <script src="script.js"></script>
     <script src="products.js"></script>
 </body>
