@@ -81,7 +81,9 @@ function ready() {
 }
 
 function purchaseClicked() {
+    var cartQuantity = document.getElementById("cart-count")
     alert('Thank you for purchasing at PC Tech')
+    cartQuantity.textContent = 0
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
